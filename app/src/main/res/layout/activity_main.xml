@@ -9,73 +9,13 @@
     tools:context="com.example.administrator.myapplication.MainActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView android:layout_width="100dp"
-        android:id="@+id/text"
-        android:visibility="gone"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:background="@color/colorPrimary"
-        android:layout_height="100dp"
-        android:text="Hello World!"/>
-    <android.support.design.widget.TextInputLayout
+    <com.example.administrator.myapplication.widget.media.IjkVideoView
+        android:id="@+id/video_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:hint="用户名/手机号"
-            android:inputType="textEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/input"
-        android:layout_marginTop="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:inputType="textPassword"
-            android:hint="密码"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
-    <Button
-        android:id="@+id/navigation"
-        android:onClick="navigationClick"
-        android:layout_marginTop="20dp"
-        android:text="navigation"
-        android:layout_below="@+id/input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent">
 
-    <com.example.administrator.myapplication.custom.VelocityView
-        android:layout_marginLeft="10dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@color/colorPrimary"
-        android:layout_below="@+id/navigation"/>
-    <com.example.administrator.myapplication.custom.PresentView
-        android:background="@color/colorPrimary"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="200dp">
-        <com.example.administrator.myapplication.custom.ChildView
-            android:background="#00ff5f"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
-    </com.example.administrator.myapplication.custom.PresentView>
+    </com.example.administrator.myapplication.widget.media.IjkVideoView>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_search"
-        android:layout_margin="10dp"
-        android:onClick="click"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/add48_2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:scaleType="fitXY"
-        app:backgroundTint="@color/colorPrimary"
-        app:fabSize="normal"/>
 
 
 
